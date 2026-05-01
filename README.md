@@ -17,12 +17,12 @@ UPV CRS 2.0 replaces this with a secure, fast, and user-friendly web application
 - Faculty grade encoding interface
 - Scholarship and STS (Socialized Tuition System) integration
 
-### 👥 Team Members
+###  Team Members
 
-### - Bacsal
-### - Banas
-### - Blancada
-### - Salomeo
+- Bacsal, Glaziela
+- Banas, Renz Frederick
+- Blancada, Eusef Karl
+- Salomeo, Joseph Patrick
 
 ---
 
