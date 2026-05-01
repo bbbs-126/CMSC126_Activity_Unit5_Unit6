@@ -168,6 +168,7 @@ This means no manual server logins are ever needed, and a bad deployment can be 
 
 ---
 ## Mockup ##
-- - ## See html files in repository and run locally using live server
-- - ## All information in mockups are made up and reflect no real people and no real student
-- - ## Vibe coded with GPT 5. Codex
+- See html files in repository and run locally using live server
+- All information in mockups are made up and reflect no real people and no real student
+- Vibe coded with GPT 5.2 Codex
+
