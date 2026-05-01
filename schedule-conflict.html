@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule & Conflict Check - UP Visayas CRS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-title">
+                <h1>Computerized Registration System</h1>
+            </div>
+        </div>
+        <div class="header-nav">
+            <a href="index.html" class="home-link">Home</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">
+                    <h3>CRS 2.0 - Schedule & conflict check</h3>
+                    <p>2025-02345 - BS Computer Science</p>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="student-dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="student-dashboard.html" class="nav-link">My enrollment</a></li>
+                <li><a href="#" class="nav-link">Settings</a></li>
+                <li><a href="index.html" class="nav-link sign-in">Sign out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <button class="sidebar-btn">
+                    📊 Dashboard
+                </button>
+                <button class="sidebar-btn active">
+                    📝 My enrollment
+                </button>
+                <button class="sidebar-btn">
+                    📅 Schedule
+                </button>
+                <button class="sidebar-btn">
+                    📄 Grades
+                </button>
+                <a href="document-request.html" class="sidebar-btn-link">
+                    <button class="sidebar-btn">
+                        📋 Documents
+                    </button>
+                </a>
+                <button class="sidebar-btn">
+                    💳 Payments
+                </button>
+                <button class="sidebar-btn">
+                    ✓ Checklist
+                </button>
+            </nav>
+            <div class="sidebar-bottom">
+                <button class="sidebar-btn">
+                    ⚙️ Settings
+                </button>
+                <button class="sidebar-btn sign-out">
+                    🚪 Sign out
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+            <!-- Schedule Header -->
+            <div class="schedule-header">
+                <div class="schedule-title">
+                    <h2>2nd Semester AY 2024-2025 - Juan dela Cruz</h2>
+                </div>
+                <div class="schedule-controls">
+                    <button class="btn-export">Export PDF</button>
+                    <button class="btn-print">Print</button>
+                </div>
+            </div>
+
+            <!-- Navigation and Conflict Indicator -->
+            <div class="schedule-nav">
+                <div class="nav-buttons">
+                    <button class="btn-nav btn-prev">‹ Previous</button>
+                    <button class="btn-nav btn-next">Next ›</button>
+                </div>
+                <div class="conflict-indicator">
+                    <span class="conflict-badge">🔺1 conflict detected</span>
+                </div>
+            </div>
+
+            <!-- Conflict Alert -->
+            <div class="conflict-alert">
+                <div class="alert-icon">⚠️</div>
+                <div class="alert-content">
+                    <strong>Conflict: CS 171 (Computer Networks, MWF 9:30-10:30) overlaps with Math 123 Lab (MWF 9:00-11:00, Fri only).</strong>
+                    <p>Please resolve before confirmation deadline.</p>
+                </div>
+            </div>
+
+            <!-- Schedule Content -->
+            <div class="schedule-content">
+                <!-- Schedule Grid -->
+                <div class="schedule-grid-wrapper">
+                    <!-- Legend -->
+                    <div class="schedule-legend">
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #5B9BD5;"></span>
+                            <span>CS 150</span>
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #70AD47;"></span>
+                            <span>CS 165</span>
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #4472C4;"></span>
+                            <span>CS 171</span>
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #FFC000;"></span>
+                            <span>Math 123</span>
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color" style="background-color: #ED7D31;"></span>
+                            <span>GE 1</span>
+                        </span>
+                        <span class="legend-item">
+                            <span class="legend-color conflict" style="background-color: #FF6B6B;"></span>
+                            <span>Conflict</span>
+                        </span>
+                    </div>
+
+                    <!-- Schedule Grid -->
+                    <div class="schedule-grid">
+                        <!-- Time Column -->
+                        <div class="time-column">
+                            <div class="time-slot header">TIME</div>
+                            <div class="time-slot">7:30</div>
+                            <div class="time-slot">8:30</div>
+                            <div class="time-slot">9:00</div>
+                            <div class="time-slot">9:30</div>
+                            <div class="time-slot">10:30</div>
+                            <div class="time-slot">12:00</div>
+                            <div class="time-slot">1:00</div>
+                            <div class="time-slot">3:00</div>
+                        </div>
+
+                        <!-- Monday -->
+                        <div class="day-column">
+                            <div class="day-header">MON</div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block cs150">
+                                <div class="class-code">CS 150</div>
+                                <div class="class-time">AG 203</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block cs171">
+                                <div class="class-code">CS 171</div>
+                                <div class="class-time">AG 204</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                        </div>
+
+                        <!-- Tuesday -->
+                        <div class="day-column">
+                            <div class="day-header">TUE</div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block math123">
+                                <div class="class-code">Math 123</div>
+                                <div class="class-time">Nat Sci 102</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                        </div>
+
+                        <!-- Wednesday -->
+                        <div class="day-column">
+                            <div class="day-header">WED</div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block cs150">
+                                <div class="class-code">CS 150</div>
+                                <div class="class-time">AG 203</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block cs165">
+                                <div class="class-code">CS 165</div>
+                                <div class="class-time">AG 205</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block ge1">
+                                <div class="class-code">GE 1</div>
+                                <div class="class-time">CAE 301</div>
+                            </div>
+                        </div>
+
+                        <!-- Thursday -->
+                        <div class="day-column">
+                            <div class="day-header">THU</div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block math123">
+                                <div class="class-code">Math 123</div>
+                                <div class="class-time">Nat Sci 102</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                        </div>
+
+                        <!-- Friday -->
+                        <div class="day-column">
+                            <div class="day-header">FRI</div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block conflict-block">
+                                <div class="class-code">Math 123 Lab</div>
+                                <div class="class-time">Nat Sci 102</div>
+                            </div>
+                            <div class="schedule-cell class-block cs171-conflict">
+                                <div class="class-code">CS 171</div>
+                                <div class="class-time">AG 204</div>
+                            </div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell"></div>
+                            <div class="schedule-cell class-block pe4">
+                                <div class="class-code">PE 4</div>
+                                <div class="class-time">Gym</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Enrolled Subjects Panel -->
+                <aside class="enrolled-subjects-panel">
+                    <h3 class="panel-title">ENROLLED SUBJECTS</h3>
+                    
+                    <div class="subject-item">
+                        <div class="subject-header">
+                            <span class="subject-code">CS 150</span>
+                            <span class="subject-units">3 u</span>
+                        </div>
+                        <div class="subject-name">Design & Analysis of Algorithms</div>
+                        <div class="subject-schedule">MWF: 7:30-8:30 · AG 203</div>
+                    </div>
+
+                    <div class="subject-item">
+                        <div class="subject-header">
+                            <span class="subject-code">CS 165</span>
+                            <span class="subject-units">3 u</span>
+                        </div>
+                        <div class="subject-name">Database Systems</div>
+                        <div class="subject-schedule">WTh: 10:30-12:00 · AG 205</div>
+                    </div>
+
+                    <div class="subject-item conflict-subject">
+                        <div class="subject-header">
+                            <span class="subject-code">CS 171</span>
+                            <span class="conflict-badge-small">conflict</span>
+                        </div>
+                        <div class="subject-name">Computer Networks</div>
+                        <div class="subject-schedule">MWF: 9:30-10:30 · AG 204</div>
+                    </div>
+
+                    <div class="subject-item conflict-subject">
+                        <div class="subject-header">
+                            <span class="subject-code">Math 123</span>
+                            <span class="conflict-badge-small">conflict</span>
+                        </div>
+                        <div class="subject-name">Linear Algebra + Lab</div>
+                        <div class="subject-schedule">TTh 10:00-2:30 · Fri 9:00-11:00</div>
+                    </div>
+
+                    <div class="subject-item">
+                        <div class="subject-header">
+                            <span class="subject-code">GE 1</span>
+                            <span class="subject-units">3 u</span>
+                        </div>
+                        <div class="subject-name">Art Appreciation</div>
+                        <div class="subject-schedule">W: 3:00-5:00 · CAE 303</div>
+                    </div>
+
+                    <div class="subject-item">
+                        <div class="subject-header">
+                            <span class="subject-code">PE 4</span>
+                            <span class="subject-units non-credit">non-credit</span>
+                        </div>
+                        <div class="subject-name">Rhythmic Activities</div>
+                        <div class="subject-schedule">F: 3:00-5:00 · Gym</div>
+                    </div>
+
+                    <div class="summary-line">
+                        <span>Total: <strong>18 units</strong></span>
+                        <span class="conflict-count"><strong>1 conflict</strong></span>
+                    </div>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Office of the University Registrar - UP Visayas, Miagao, Iilo 5023 - (033) 335-9631 · oor-crs@upv.edu.ph</p>
+        </div>
+    </footer>
+</body>
+</html>

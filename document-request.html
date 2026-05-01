@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Request Portal - UP Visayas CRS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-title">
+                <h1>Computerized Registration System</h1>
+            </div>
+        </div>
+        <div class="header-nav">
+            <a href="index.html" class="home-link">Home</a>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <div class="logo-text">
+                    <h3>CRS 2.0 - Document request portal</h3>
+                    <p>2025-02345 - Juan dela Cruz</p>
+                </div>
+            </div>
+            <div class="user-badge">
+                <span class="badge-circle">JD</span>
+                <span class="badge-name">Juan dela Cruz - 202X-123</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="student-dashboard.html" class="nav-link">Dashboard</a></li>
+                <li><a href="schedule-conflict.html" class="nav-link">My enrollment</a></li>
+                <li><a href="#" class="nav-link">Settings</a></li>
+                <li><a href="index.html" class="nav-link sign-in">Sign out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Dashboard -->
+    <div class="dashboard-container doc-request-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <nav class="sidebar-nav">
+                <a href="student-dashboard.html" class="sidebar-btn-link">
+                    <button class="sidebar-btn">
+                        📊 Dashboard
+                    </button>
+                </a>
+                <a href="schedule-conflict.html" class="sidebar-btn-link">
+                    <button class="sidebar-btn">
+                        📝 My enrollment
+                    </button>
+                </a>
+                <a href="schedule-conflict.html" class="sidebar-btn-link">
+                    <button class="sidebar-btn">
+                        📅 Schedule
+                    </button>
+                </a>
+                <button class="sidebar-btn">
+                    📄 Grades
+                </button>
+                <button class="sidebar-btn active">
+                    📋 Documents
+                </button>
+                <button class="sidebar-btn">
+                    💳 Payments
+                </button>
+                <button class="sidebar-btn">
+                    ✓ Checklist
+                </button>
+            </nav>
+            <div class="sidebar-bottom">
+                <button class="sidebar-btn">
+                    ⚙️ Settings
+                </button>
+                <button class="sidebar-btn sign-out">
+                    🚪 Sign out
+                </button>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main doc-request-main">
+            <div class="doc-request-wrapper">
+                <!-- Left Column - Request Form -->
+                <div class="doc-request-form-col">
+                    <!-- Title -->
+                    <section class="doc-title-section">
+                        <h2>Request academic documents</h2>
+                        <p>All documents will be processed and mailed per the zero-contact policy (RA 11302).</p>
+                    </section>
+
+                    <!-- Zero-Contact Policy Banner -->
+                    <div class="policy-banner">
+                        <span class="policy-icon">✓</span>
+                        <div class="policy-content">
+                            <strong>Zero-contact policy active.</strong> Submit your request here and pay via the UP Visayas Landbank account. Documents will be mailed automatically — no in-person visits required.
+                        </div>
+                    </div>
+
+                    <!-- Select Document Type -->
+                    <section class="doc-section">
+                        <h3 class="doc-section-title">SELECT DOCUMENT TYPE</h3>
+                        <div class="doc-type-grid">
+                            <div class="doc-type-card">
+                                <div class="doc-type-icon">📄</div>
+                                <div class="doc-type-label">Transcript of Records</div>
+                                <div class="doc-type-desc">Official TOR with dry seal</div>
+                                <div class="doc-type-fee">₱100/copy + mailing fee</div>
+                            </div>
+                            <div class="doc-type-card">
+                                <div class="doc-type-icon">📝</div>
+                                <div class="doc-type-label">Form 137 / SF 10</div>
+                                <div class="doc-type-desc">For scholarship or transfer</div>
+                                <div class="doc-type-fee">₱50 + mailing fee</div>
+                            </div>
+                            <div class="doc-type-card">
+                                <div class="doc-type-icon">📋</div>
+                                <div class="doc-type-label">Honorable Dismissal</div>
+                                <div class="doc-type-desc">Transferees & enrolled students</div>
+                                <div class="doc-type-fee">₱100 + mailing fee</div>
+                            </div>
+                            <div class="doc-type-card">
+                                <div class="doc-type-icon">🎓</div>
+                                <div class="doc-type-label">Certificate of Enrollment</div>
+                                <div class="doc-type-desc">Current or past semester</div>
+                                <div class="doc-type-fee">₱50 + mailing fee</div>
+                            </div>
+                            <div class="doc-type-card">
+                                <div class="doc-type-icon">📊</div>
+                                <div class="doc-type-label">Copy of Grades</div>
+                                <div class="doc-type-desc">For transcript with seal</div>
+                                <div class="doc-type-fee">₱35/copy + mailing fee</div>
+                            </div>
+                            <div class="doc-type-card">
+                                <div class="doc-type-icon">📎</div>
+                                <div class="doc-type-label">Other document</div>
+                                <div class="doc-type-desc">Describe in purpose field</div>
+                                <div class="doc-type-fee">Variable</div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Request Details -->
+                    <section class="doc-section">
+                        <h3 class="doc-section-title">REQUEST DETAILS</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Number of copies</label>
+                                <select class="form-control">
+                                    <option>1 COPY</option>
+                                    <option>2 COPIES</option>
+                                    <option>3 COPIES</option>
+                                    <option>4 COPIES</option>
+                                    <option>5 COPIES</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Semester covered</label>
+                                <select class="form-control">
+                                    <option>2nd Sem 2024-25</option>
+                                    <option>1st Sem 2024-25</option>
+                                    <option>All semesters</option>
+                                </select>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Purpose -->
+                    <section class="doc-section">
+                        <h3 class="doc-section-title">PURPOSE / INTENDED RECIPIENT</h3>
+                        <textarea class="form-control textarea-control" placeholder="e.g. For CHED scholarship application, Magna Carta Foundation..." rows="3"></textarea>
+                    </section>
+
+                    <!-- Mailing Address -->
+                    <section class="doc-section">
+                        <h3 class="doc-section-title">MAILING ADDRESS</h3>
+                        <div class="form-group">
+                            <label>Full name of recipient</label>
+                            <input type="text" class="form-control" value="Juan dela Cruz">
+                        </div>
+                        <div class="form-group">
+                            <label>Complete address</label>
+                            <input type="text" class="form-control" placeholder="House/Unit, Street, Barangay, Municipality, Province...">
+                        </div>
+                    </section>
+
+                    <!-- Contact Information -->
+                    <section class="doc-section">
+                        <h3 class="doc-section-title">CONTACT INFORMATION</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label>Contact number</label>
+                                <input type="tel" class="form-control" placeholder="09XXXXXXXXX">
+                            </div>
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" class="form-control" placeholder="your@email.com">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Payment -->
+                    <section class="doc-section">
+                        <h3 class="doc-section-title">PAYMENT</h3>
+                        <div class="payment-instructions">
+                            <p><strong>After submitting, pay to Landbank - UP Visayas (Acct No. 0882-0656-97).</strong> Email proof of payment to <span class="highlight">crs.upvisayas@up.edu.ph</span> with your name and request ID.</p>
+                        </div>
+                        <div class="form-group">
+                            <label>Upload proof of payment (optional)</label>
+                            <div class="file-upload">
+                                <button class="btn-file-choose">Choose File - No file chosen</button>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Submit Button -->
+                    <button class="btn-submit-request">Submit request</button>
+                </div>
+
+                <!-- Right Column - Active & Previous Requests -->
+                <aside class="doc-request-status-col">
+                    <!-- Your Active Request -->
+                    <section class="status-section">
+                        <h3 class="status-section-title">YOUR ACTIVE REQUEST</h3>
+                        <div class="active-request-card">
+                            <div class="request-item-header">Transcript of Records</div>
+                            <div class="request-item-ref">Ref #: DOC-2025-00482 · Submitted Jan 12</div>
+                        </div>
+                    </section>
+
+                    <!-- Request Status -->
+                    <section class="status-section">
+                        <h3 class="status-section-title">REQUEST STATUS</h3>
+                        <div class="status-timeline">
+                            <div class="status-step completed">
+                                <div class="status-circle"></div>
+                                <div class="status-content">
+                                    <div class="status-label">Submitted</div>
+                                    <div class="status-date">Jan 12, 2025 · 2:34 PM</div>
+                                </div>
+                            </div>
+                            <div class="status-step completed">
+                                <div class="status-circle"></div>
+                                <div class="status-content">
+                                    <div class="status-label">Payment verified</div>
+                                    <div class="status-date">Jan 13, 2025</div>
+                                </div>
+                            </div>
+                            <div class="status-step completed">
+                                <div class="status-circle"></div>
+                                <div class="status-content">
+                                    <div class="status-label">Processing</div>
+                                    <div class="status-date">Registrar is preparing your TOR</div>
+                                </div>
+                            </div>
+                            <div class="status-step">
+                                <div class="status-circle"></div>
+                                <div class="status-content">
+                                    <div class="status-label">Mailed</div>
+                                    <div class="status-date">Estimated: Jan 17-20</div>
+                                </div>
+                            </div>
+                            <div class="status-step">
+                                <div class="status-circle"></div>
+                                <div class="status-content">
+                                    <div class="status-label">Delivered</div>
+                                    <div class="status-date">Tracking no. TBD</div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- Previous Requests -->
+                    <section class="status-section">
+                        <h3 class="status-section-title">PREVIOUS REQUESTS</h3>
+                        <div class="previous-request-item">
+                            <div class="prev-request-header">
+                                <span class="prev-request-name">Copy of grades</span>
+                                <span class="prev-request-status delivered">Delivered</span>
+                            </div>
+                            <div class="prev-request-date">Aug 2024 · DOC-2024-00314</div>
+                        </div>
+                        <div class="previous-request-item">
+                            <div class="prev-request-header">
+                                <span class="prev-request-name">Certificate of Enrollment</span>
+                                <span class="prev-request-status delivered">Delivered</span>
+                            </div>
+                            <div class="prev-request-date">Feb 2024 · DOC-2024-00091</div>
+                        </div>
+                    </section>
+                </aside>
+            </div>
+        </main>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>Office of the University Registrar - UP Visayas, Miagao, Iilo 5023 - (033) 335-9631 · oor-crs@upv.edu.ph</p>
+        </div>
+    </footer>
+</body>
+</html>
