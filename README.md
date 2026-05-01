@@ -19,12 +19,10 @@ UPV CRS 2.0 replaces this with a secure, fast, and user-friendly web application
 
 ### 👥 Team Members
 
-| Name | Role |
-|------|------|
-| *(Member 1)* | Project Lead / Backend |
-| *(Member 2)* | Frontend Developer |
-| *(Member 3)* | Database / DevOps |
-| *(Member 4)* | UI/UX Designer |
+### - Bacsal
+### - Banas
+### - Blancada
+### - Salomeo
 
 ---
 
@@ -170,6 +168,6 @@ This means no manual server logins are ever needed, and a bad deployment can be 
 
 ---
 ## Mockup ##
-- - # See html files in repository and run locally using live server
-- - # All information in mockups are made up and reflect no real people and no real student
-- - # Vibe coded with GPT 5.2 Codex
+- - ## See html files in repository and run locally using live server
+- - ## All information in mockups are made up and reflect no real people and no real student
+- - ## Vibe coded with GPT 5. Codex
